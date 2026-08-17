@@ -1,0 +1,34 @@
+{
+  "name": "minimal-codeql-highlighter",
+  "displayName": "Minimal CodeQL Highlighting",
+  "description": "Minimal TextMate grammar for CodeQL (.ql / .qll) syntax highlighting.",
+  "version": "0.0.1",
+  "publisher": "hugov",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hugo-syn/vscode-codeql-highlighter.git"
+  },
+  "engines": {
+    "vscode": "^1.0.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "ql",
+        "aliases": ["CodeQL", "ql", "Ql"],
+        "extensions": [".ql", ".qll"],
+	"configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "ql",
+        "scopeName": "source.ql",
+        "path": "./syntaxes/ql.tmLanguage.json"
+      }
+    ]
+  }
+}
